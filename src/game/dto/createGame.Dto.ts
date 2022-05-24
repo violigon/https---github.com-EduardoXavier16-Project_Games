@@ -1,7 +1,7 @@
 import { IsEmail, IsNotEmpty, IsNumber, IsPositive, IsString, MinLength } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
-export class CreateUserDto {
+export class CreateGameDto {
   @IsNotEmpty()
   @IsString()
   @ApiProperty({
