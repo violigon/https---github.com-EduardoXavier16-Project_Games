@@ -11,8 +11,8 @@ async function bootstrap() {
     .setDescription('Aplicação para gestão dos jogos de um ou mais usuários')
     .setVersion('0.0.1')
     .addTag('status')
-    .addTag('genero')
-    .addTag('jogo')
+    .addTag('gender')
+    .addTag('game')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
