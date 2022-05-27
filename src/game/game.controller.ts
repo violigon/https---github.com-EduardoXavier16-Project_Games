@@ -29,7 +29,7 @@ export class GameController {
   }
 
   @Patch(':id')
-  @ApiOperation({ summary: 'Atualizar uma mesa pelo seu ID',});
+  @ApiOperation({ summary: 'Atualizar uma mesa pelo seu ID',})
   update(@Param('id') id: string, @Body() dto: UpdateGameDto): Promise<Game> {
     return this.gameService.update(id, dto);
   }
